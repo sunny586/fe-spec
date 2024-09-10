@@ -1,0 +1,22 @@
+{
+  "name": "commitlint-config",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "zhangyu <313283928@qq.com>",
+  "homepage": "https://github.com/sunny586/fe-spec#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunny586/fe-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sunny586/fe-spec/issues"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.5.0"
+  }
+}
