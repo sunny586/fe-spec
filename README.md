@@ -46,7 +46,9 @@ npx --no -- commitlint --edit ${1}
 - 在 `package.json` 中配置lint-staged
 
 ```json
-lint-staged": {
+{
+  // ...
+  "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
       "eslint --fix",
       "prettier --write"
@@ -60,7 +62,8 @@ lint-staged": {
     "{!(package)*.json,.!(browserslist)*rc}": [
       "prettier --write--parser json"
     ]
-},
+  }
+}
 ```
 
 - 根目录新增 commitlint.config.js
@@ -102,4 +105,3 @@ pnpm run changelog
 
 - [vue项目配置git提交规范husky、lint-staged、@commitlint/cli](https://blog.csdn.net/qq_61402485/article/details/131612959)
 - [Vue3+Ts+Vite项目(第三篇)——配置husky、stylelint、commitlint，配置git提交代码校验](https://blog.csdn.net/qq_44741577/article/details/137959595)
-
