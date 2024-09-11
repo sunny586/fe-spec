@@ -84,11 +84,25 @@ git commit -m <type>[optional scope]: <description> // 注意冒号后面有空�
 
 ## markdownlint
 
-需要安装2个包：markdownlint markdownlint-cli
+-  安装依赖
 
 ```bash
 npm i -D markdownlint markdownlint-cli
 pnpm run lint
+```
+
+- 配置 `.markdownlint.json`
+
+```json
+{
+  "extends": "sunny586-fe-markdownlint-config"
+}
+```
+
+- 配置 `.markdownlintignore`
+
+```bash
+node_modules/
 ```
 
 ## 生成`CHANGELOG`
