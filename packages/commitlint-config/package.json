@@ -17,6 +17,7 @@
     "url": "https://github.com/sunny586/fe-spec/issues"
   },
   "dependencies": {
-    "conventional-changelog-conventionalcommits": "^4.5.0"
+    "conventional-changelog-conventionalcommits": "^4.5.0",
+    "@commitlint/config-conventional": "^19.4.1"
   }
 }
