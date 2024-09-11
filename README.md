@@ -47,7 +47,6 @@ npx --no -- commitlint --edit ${1}
 
 ```json
 {
-  // ...
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
       "eslint --fix",
