@@ -69,7 +69,7 @@ npx --no -- commitlint --edit ${1}
 
 ```js
 module.exports = {
-  extends: ['./packages/commitlint-config/index.js'],
+  extends: ['sunny586-fe-commitlint-config'],
 };
 ```
 
