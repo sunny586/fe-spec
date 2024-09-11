@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> TODO: description",
   "author": "zhangyu <313283928@qq.com>",
   "homepage": "https://github.com/sunny586/fe-spec#readme",
@@ -17,7 +17,7 @@
     "url": "https://github.com/sunny586/fe-spec/issues"
   },
   "dependencies": {
-    "conventional-changelog-conventionalcommits": "^4.5.0",
-    "@commitlint/config-conventional": "^12.1.4"
+    "@commitlint/config-conventional": "^12.1.4",
+    "conventional-changelog-conventionalcommits": "^4.5.0"
   }
 }
