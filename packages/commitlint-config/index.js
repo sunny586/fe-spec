@@ -38,7 +38,7 @@ module.exports = {
         // 性能优化
         'perf',
         // 测试(单元,集成测试)
-        // 'test',
+        'test',
       ],
     ],
   },
