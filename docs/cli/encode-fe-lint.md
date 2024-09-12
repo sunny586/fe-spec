@@ -4,9 +4,7 @@ categories:
   - 脚手架规范
 tags:
   - 脚手架规范
-author:
-  name: 澄怀
-  link: https://github.com/encode-studio-fe/fe-spec
+
 ---
 
 # encode-fe-lint

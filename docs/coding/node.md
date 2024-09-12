@@ -4,9 +4,7 @@ categories:
     - 编码规范
 tags:
     - 编码规范
-author:
-    name: 澄怀
-    link: https://github.com/encode-studio-fe/fe-spec
+
 ---
 
 # Node 编码规范
@@ -255,7 +253,7 @@ async function test() {
 
 - 3.3.【推荐】把 CPU 密集型任务委托给反向代理。
 
-Node.js 应用不合适做 CPU 密集型任务（例如 gzip，SSL），请尽量把这类任务代理给 nginx 或其他服务。
+Node.js 应用不合适做 CPU 密集型任务（例如 gzip，SSL），请尽量把这类任务代理给 Nginx 或其他服务。
 
 - 3.4.【推荐】使用 `async/await`，尽量避免使用回调函数。
 
@@ -302,4 +300,4 @@ luke.jump()
 
 - [eslint-plugin-security](https://github.com/nodesecurity/eslint-plugin-security)
 - [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node)
-- [airbnb javascript style](https://github.com/airbnb/javascript)
+- [airbnb JavaScript style](https://github.com/airbnb/javascript)

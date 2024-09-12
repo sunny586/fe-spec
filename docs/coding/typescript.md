@@ -4,9 +4,7 @@ categories:
     - 编码规范
 tags:
     - 编码规范
-author:
-    name: 澄怀
-    link: https://github.com/encode-studio-fe/fe-spec
+
 ---
 
 # TypeScript 编码规范
@@ -14,7 +12,6 @@ author:
 :::tip
 `TypeScript` 是微软开发的一款开源编程语言，它是 `JavaScript` 的超集，因此其编码规范和配套 `Lint` 工具也与[JavaScript 编码规范](./javascript.md)一脉相承。
 :::
-
 
 ## 编码风格
 
@@ -206,8 +203,6 @@ author:
   2. 对象字面量禁止类型断言，断言成 `any` 除外，对象字面量应该直接声明。
 
   > `TypeScript 3.4` 中引入的 `const` 断言在本规则中不受约束，`let x = 'hello' as const;` 和 `let x = <const>'hello';` 都是允许的。
-
-  
 
   ```typescript
   // bad

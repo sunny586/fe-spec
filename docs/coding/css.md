@@ -4,9 +4,7 @@ categories:
     - 编码规范
 tags:
     - 编码规范
-author:
-    name: 澄怀
-    link: https://github.com/encode-studio-fe/fe-spec
+
 ---
 
 # CSS 编码规范
@@ -22,7 +20,7 @@ author:
 详细规则如下：
 
 - 1.1.1.【强制】所有声明都应该以分号结尾，不能省略。`stylelint`: [declaration-block-trailing-semicolon](https://stylelint.io/user-guide/rules/declaration-block-trailing-semicolon)
-  
+
   虽然 `CSS` 语法中最后一条声明的分号是可选的，但是使用分号可以增加代码的一致性和易用性。
 
   ```css
@@ -53,7 +51,7 @@ author:
   }
   ```
 
-- 1.1.3.【推荐】选择器和 `{` 之间保留一个空格。`stylelint`: [block-opening-brace-space-before](https://stylelint.io/user-guide/rules/block-opening-brace-space-before) 
+- 1.1.3.【推荐】选择器和 `{` 之间保留一个空格。`stylelint`: [block-opening-brace-space-before](https://stylelint.io/user-guide/rules/block-opening-brace-space-before)
 
   ```css
   /* bad */
@@ -67,7 +65,7 @@ author:
   }
   ```
 
-- 1.1.4.【推荐】属性名和 `:` 之前无空格，`:` 和属性值之间保留一个空格。`stylelint`: [declaration-colon-space-after](https://stylelint.io/user-guide/rules/declaration-colon-space-after) [declaration-colon-space-before](https://stylelint.io/user-guide/rules/declaration-colon-space-before) 
+- 1.1.4.【推荐】属性名和 `:` 之前无空格，`:` 和属性值之间保留一个空格。`stylelint`: [declaration-colon-space-after](https://stylelint.io/user-guide/rules/declaration-colon-space-after) [declaration-colon-space-before](https://stylelint.io/user-guide/rules/declaration-colon-space-before)
 
   ```css
   /* bad */
@@ -170,7 +168,6 @@ author:
   }
   ```
 
-
 - 1.1.10.【推荐】单行代码最多不要超过 100 个字符。 `stylelint`: [max-line-length](https://stylelint.io/user-guide/rules/max-line-length) 除了以下两种情况：
 
   - 使用 [`url()`](https://developer.mozilla.org/en-US/docs/Web/CSS/url) 函数时
@@ -191,7 +188,7 @@ author:
   ```
 
 - 1.1.11.【参考】使用多个选择器时，每个选择器应该单独成行。`stylelint`: [selector-list-comma-newline-after](https://stylelint.io/user-guide/rules/selector-list-comma-newline-after)
-  
+
   ```css
   /* bad */
   .selector, .selector-secondary, .selector-third {
@@ -245,7 +242,7 @@ author:
 ### 1.2. 选择器
 
 - 1.2.1.【参考】不要使用 `id` 选择器。`stylelint`: [selector-max-id](https://stylelint.io/user-guide/rules/selector-max-id)
-  
+
   `id` 会带来过高的[选择器优先级](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)，使得后续很难进行样式覆盖（继而引发使用 `!important` 覆盖样式的恶性循环）。
 
   ```css
@@ -301,7 +298,7 @@ author:
   > - 伪类（伪元素）选择器，比如 `a:hover`、`a::before`
 
 ### 1.3. 属性和属性值
-  
+
 - 1.3.1.【推荐】使用尽可能短的十六进制值。`stylelint`: [color-hex-length](https://stylelint.io/user-guide/rules/color-hex-length)
 
   ```css
@@ -334,7 +331,7 @@ author:
 
 - 1.3.4.【推荐】长度值为 0 时，省略掉长度单位。`stylelint`: [length-zero-no-unit](https://stylelint.io/user-guide/rules/length-zero-no-unit)
 
-  在 CSS 中，长度值为 0 时，它的单位是可选的（长度单位包括：em, ex, ch, vw, vh, cm, mm, in, pt, pc, px, rem, vmin, and vmax）。省略长度单位可以使代码更简洁：
+  在 CSS 中，长度值为 0 时，它的单位是可选的（长度单位包括：em, ex, ch, vw, vh, cm, mm, in, pt, PC, px, rem, vmin, and vmax）。省略长度单位可以使代码更简洁：
 
   ```css
   /* bad */
@@ -423,7 +420,7 @@ author:
   ```
 
   更多 CSS 属性顺序参考如下列表：
-  
+
   |第一组|第二组|第三组|第四组|第五组|第六组|第七组|
   |----|----|----|----|----|----|----|
   |content |box-sizing|background*         |font*|opacity       |unicode-bidi|transition*|
@@ -449,7 +446,6 @@ author:
 
 - 1.3.7.【参考】适时使用简写属性。`stylelint`: [declaration-block-no-shorthand-property-overrides](https://stylelint.io/user-guide/rules/declaration-block-no-shorthand-property-overrides) [declaration-block-no-redundant-longhand-properties](https://stylelint.io/user-guide/rules/declaration-block-no-redundant-longhand-properties)
 
-
   常见的[简写属性](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)包括：
 
   - `font`
@@ -460,7 +456,7 @@ author:
   - `border-radius`
 
   使用简写属性时，需要显式地设置所有值。我们应该在真正需要设置所有值或大多数值时才使用简写属性。
-  
+
   如果只是想设置某一个属性，则不应该使用简写属性：
 
   ```css
@@ -494,10 +490,10 @@ author:
 ## 2. `Sass` 和 `Less`
 
 > 对于 CSS 而言，可以在新项目中尝试放弃使用 `Sass`、`Less` 这样的处理器语言，因为：
-> 
->* 这些处理器语言是在一定历史条件下的产物，虽然这些产物在一定程度上提高开发者的开发效率，但不同的处理器语言也同时增加了项目的维护成本（特别是多人协作，多团队协作的时候）。
->* 更建议使用 `PostCSS` 处理器，它类似于 `CSS` 中的 `Babel`，不但具备 `Sass` 和 `Less` 的功能，而且社区繁荣，同时还可以根据自己的需求扩展相关的插件。
->* 随着 `CSS` 的一些新特性出现，`Sass` 和 `Less` 以往的优势也会慢慢消失。
+>
+>- 这些处理器语言是在一定历史条件下的产物，虽然这些产物在一定程度上提高开发者的开发效率，但不同的处理器语言也同时增加了项目的维护成本（特别是多人协作，多团队协作的时候）。
+>- 更建议使用 `PostCSS` 处理器，它类似于 `CSS` 中的 `Babel`，不但具备 `Sass` 和 `Less` 的功能，而且社区繁荣，同时还可以根据自己的需求扩展相关的插件。
+>- 随着 `CSS` 的一些新特性出现，`Sass` 和 `Less` 以往的优势也会慢慢消失。
 
 - 2.1.【推荐】四则运算符两侧各保留一个空格：
 
@@ -622,4 +618,4 @@ author:
 - [Code Guide by @mdo](http://codeguide.co)
 - [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
 - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
-- [spec css-style-guide](https://github.com/ecomfe/spec/blob/master/css-style-guide.md)
+- [spec CSS-style-guide](https://github.com/ecomfe/spec/blob/master/css-style-guide.md)

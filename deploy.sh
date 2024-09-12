@@ -6,7 +6,7 @@ set -e
 
 push_addr=`git remote get-url --push origin`
 commit_info=`git describe --all --always --long`
-dist_path=docs/.vuepress/dist
+dist_path=docs/.vitepress/dist
 push_branch=gh-pages
 
 # 生成静态文件

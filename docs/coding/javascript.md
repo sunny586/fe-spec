@@ -4,9 +4,7 @@ categories:
     - 编码规范
 tags:
     - 编码规范
-author:
-    name: 澄怀
-    link: https://github.com/encode-studio-fe/fe-spec
+
 ---
 
 # JavaScript 编码规范
@@ -16,8 +14,8 @@ author:
 :::
 
 ## 1. 编码风格
- 
-![javascript style](./img//JavaScript.svg)
+
+![JavaScript style](./img//JavaScript.svg)
 
 详细规则如下：
 
@@ -475,8 +473,6 @@ author:
   }
   ```
 
-
-
 ### 1.6. 空行
 
 - 1.6.1.【推荐】在文件末尾保留一行空行。`eslint`: [eol-last](https://eslint.org/docs/rules/eol-last)
@@ -502,7 +498,6 @@ author:
   // ...
   export default foo;↵
   ```
-
 
 - 1.6.2.【强制】块的开始和结束不能是空行。`eslint`: [padded-blocks](https://eslint.org/docs/rules/padded-blocks)
 
@@ -2116,7 +2111,6 @@ author:
   export default Component;
   ```
 
-
 - 2.7.12.【参考】模块开发者选择EMS和CJS时，需要判断运行时环境：如果你的模块是只面向浏览器的则选择ESM；如果你的模块是只面向Node.js的则选择CJS，并且确定遵循[CJS命名空间规则](https://nodejs.org/api/esm.html#esm_commonjs_namespaces)；如果你的模块是2者都要兼容的，则ESM和CJS都要支持。
 
   Node.js的模块，历史上Node.js遵循的是CommonJS，因此ES6 Module会有比较严重的兼容性问题。暂时没有特别好的解法，只能在Node.js中跟进运行时环境，判断使用模块标准。[讨论issue](https://github.com/nodejs/node/issues/33954)
@@ -2160,7 +2154,6 @@ author:
   num += 1;
   num -= 1;
   ```
-
 
 - 2.8.3.【强制】不要使用 `void` 运算符。`eslint`: [no-void](https://eslint.org/docs/rules/no-void)
 
@@ -2406,7 +2399,7 @@ author:
   - **Null** 被计算为 **false**
   - **布尔值** 被计算为 **布尔的值**
   - **数字** 如果是 **+0、-0 或 NaN** 被计算为 **false**，否则为 **true**
-  - **字符串** 如果是空字符串 `''` 被计算为 **false**，否则为 **true**  
+  - **字符串** 如果是空字符串 `''` 被计算为 **false**，否则为 **true**
 
   ```javascript
   if ({}) { // => true
@@ -2455,7 +2448,6 @@ author:
   }
   ```
 
-
 - 2.10.3.【推荐】禁止使用 `alert`。`eslint`: [no-alert](https://eslint.org/docs/rules/no-alert)
 
   `alert` 语句会使浏览器弹出原生警告框，这可能让人感觉你的程序出错了。如果需要对用户弹出警告信息，好的做法是使用第三方的弹窗组件或自己定义警告框样式。同理，`confirm` 和 `prompt` 语句也不应被使用。
@@ -2501,7 +2493,7 @@ author:
 
 ## 3. 注释
 
-> 注释的目的：提高代码的可读性，从而提高代码的可维护性  
+> 注释的目的：提高代码的可读性，从而提高代码的可维护性
 > 注释的原则：如无必要，勿增注释；如有必要，尽量详尽
 
 - 3.1.【推荐】单行注释使用 //。

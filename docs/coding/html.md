@@ -4,9 +4,7 @@ categories:
     - 编码规范
 tags:
     - 编码规范
-author:
-    name: 澄怀
-    link: https://github.com/encode-studio-fe/fe-spec
+
 ---
 
 # HTML 编码规范
@@ -48,7 +46,7 @@ author:
 ### 1.3. 元数据
 
 - 1.3.1.【推荐】使用 `UTF-8` 字符编码。
- 
+
     声明一个明确的字符编码，可以让浏览器更快速高效地确定适合网页内容的渲染方式。
 
     由于历史原因，不同浏览器采用了不同的字符编码。但对于新业务，如无特殊要求，统一使用 UTF-8 字符编码，以便统一。
@@ -72,7 +70,7 @@ author:
 ### 1.4. 资源加载
 
 - 1.4.1.【推荐】引入 `CSS` 和 `JavaScript` 时无需指定 `type`。
-    根据 `HTML5` 规范，引入 `CSS` 和 `JavaScript` 时通常不需要指明 `type`，因为 [text/css](https://html.spec.whatwg.org/multipage/obsolete.html#attr-style-type) 和 [text/javascript](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type) 分别是他们的默认值。
+    根据 `HTML5` 规范，引入 `CSS` 和 `JavaScript` 时通常不需要指明 `type`，因为 [text/CSS](https://html.spec.whatwg.org/multipage/obsolete.html#attr-style-type) 和 [text/JavaScript](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type) 分别是他们的默认值。
 
     ```html
     <!-- bad -->

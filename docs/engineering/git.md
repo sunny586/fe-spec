@@ -4,9 +4,7 @@ categories:
   - 工程规范
 tags:
   - 工程规范
-author:
-  name: 澄怀
-  link: https://github.com/encode-studio-fe/fe-spec
+
 ---
 
 # Git 规范
@@ -202,7 +200,7 @@ BREAKING CHANGE: 为了组件 API 规范的统一，本次升级将 size 属性�
 
 ### 2.1. 分支模型选择的说明
 
-目前互联网和社区中流传最广泛的一个分支模型 [Git Flow](https://github.com/nvie/gitflow) 出自 [a-successful-git-branching-model](https://nvie.com/posts/a-successful-git-branching-model/) 这篇十年前的文章，文章作者 Vincent Driessen 在 2020 年三月份的时候已经公开表示，该分支模型已经不适用于现如今持续交付的软件工程方式，推荐在持续交付的软件工程中使用更简单的 [Github Flow](https://guides.github.com/introduction/flow/) 模型。
+目前互联网和社区中流传最广泛的一个分支模型 [Git Flow](https://github.com/nvie/gitflow) 出自 [a-successful-git-branching-model](https://nvie.com/posts/a-successful-git-branching-model/) 这篇十年前的文章，文章作者 Vincent Driessen 在 2020 年三月份的时候已经公开表示，该分支模型已经不适用于现如今持续交付的软件工程方式，推荐在持续交付的软件工程中使用更简单的 [GitHub Flow](https://guides.github.com/introduction/flow/) 模型。
 
 ### 2.2. 分支命名
 
