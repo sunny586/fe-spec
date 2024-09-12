@@ -1,5 +1,5 @@
 ---
-title: stylelint-config-encode
+title: sunny586-fe-stylelint-config
 categories:
   - 工程规范
 tags:
@@ -7,7 +7,7 @@ tags:
 
 ---
 
-# stylelint-config-encode
+# sunny586-fe-stylelint-config
 
 :::tip
 sunny586 CSS 规范
@@ -20,7 +20,7 @@ sunny586 CSS 规范
 需要先行安装 [stylelint](https://www.npmjs.com/package/stylelint) 和 [stylelint-SCSS](https://www.npmjs.com/package/stylelint-scss)：
 
 ```bash
-npm install stylelint-config-encode stylelint stylelint-scss --save-dev
+npm install sunny586-fe-stylelint-config stylelint stylelint-scss --save-dev
 ```
 
 ## 使用
@@ -29,6 +29,6 @@ npm install stylelint-config-encode stylelint stylelint-scss --save-dev
 
 ```json
 {
-  "extends": "stylelint-config-encode"
+  "extends": "sunny586-fe-stylelint-config"
 }
 ```

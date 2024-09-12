@@ -1,5 +1,5 @@
 ---
-title: commitlint-config-encode
+title: sunny586-fe-commitlint-config
 categories:
   - 工程规范
 tags:
@@ -7,7 +7,7 @@ tags:
 
 ---
 
-# commitlint-config-encode
+# sunny586-fe-commitlint-config
 
 :::tip
 sunny586 Git 规范
@@ -20,7 +20,7 @@ sunny586 Git 规范
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install commitlint-config-encode @commitlint/cli --save-dev
+npm install sunny586-fe-commitlint-config @commitlint/cli --save-dev
 ```
 
 ## 使用
@@ -29,7 +29,7 @@ npm install commitlint-config-encode @commitlint/cli --save-dev
 
 ```javascript
 module.exports = {
-  extends: ['encode'],
+  extends: ['sunny586-fe-commitlint-config'],
 };
 ```
 

@@ -121,6 +121,7 @@ export default defineConfig({
           { text: 'sunny586-fe-stylelint-config', link: '/npm/stylelint' },
           { text: 'sunny586-fe-commitlint-config', link: '/npm/commitlint' },
           { text: 'sunny586-fe-markdownlint-config', link: '/npm/markdownlint' },
+          { text: 'sunny586-fe-eslint-plugin', link: '/npm/eslint-plugin' },
         ],
       },
       {

@@ -1,5 +1,5 @@
 ---
-title: eslint-plugin-encode
+title: sunny586-fe-eslint-plugin
 categories:
   - 工程规范
 tags:
@@ -7,12 +7,12 @@ tags:
 
 ---
 
-# eslint-plugin-encode
+# sunny586-fe-eslint-plugin
 
 除了本包，你需要同时安装 [ESlint](https://eslint.org/)
 
 ```shell
-npm install eslint-plugin-encode eslint --save-dev
+npm install sunny586-fe-eslint-plugin eslint --save-dev
 ```
 
 ## 使用
@@ -22,9 +22,9 @@ npm install eslint-plugin-encode eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['eslint-config-encode'],
+  plugin: ['sunny586-fe-eslint-config'],
   rules: {
-    'eslint-plugin-encode/no-secret-info': 'error',
+    'sunny586-fe-eslint-plugin/no-secret-info': 'error',
   },
 };
 ```
@@ -34,7 +34,7 @@ module.exports = {
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: 'plugin:eslint-plugin-encode/recommended',
+  extends: 'plugin:sunny586-fe-eslint-plugin/recommended',
 };
 ```
 
