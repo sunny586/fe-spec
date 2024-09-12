@@ -2,24 +2,25 @@ const assert = require('assert');
 const stylelint = require('stylelint');
 const path = require('path');
 
+const postcssScss = require('postcss-scss');
+
 describe('test/rules-validate.test.js', () => {
   it('Validate default', async () => {
     const filePaths = [path.join(__dirname, './fixtures/index.css')];
-
     const result = await stylelint.lint({
       configFile: path.join(__dirname, '../index.js'),
       files: filePaths,
       fix: false,
+      customSyntax: postcssScss,
     });
-
     if (result && result.errored) {
       const filesResult = JSON.parse(result.output || '[]') || [];
       filesResult.forEach((fileResult) => {
         console.log(`========= ${filePaths} ==========`);
         console.log(fileResult.warnings);
       });
-
-      assert.ok(filesResult.length !== 0);
+      console.log(filesResult.length, 'haha...');
+      assert.ok(filesResult.length === 0);
     }
   });
 
@@ -30,6 +31,7 @@ describe('test/rules-validate.test.js', () => {
       configFile: path.join(__dirname, '../index.js'),
       files: filePaths,
       fix: false,
+      customSyntax: postcssScss,
     });
 
     if (result && result.errored) {
@@ -39,7 +41,7 @@ describe('test/rules-validate.test.js', () => {
         console.log(fileResult.warnings);
       });
 
-      assert.ok(filesResult.length !== 0);
+      assert.ok(filesResult.length === 0);
     }
   });
 
@@ -50,6 +52,7 @@ describe('test/rules-validate.test.js', () => {
       configFile: path.join(__dirname, '../index.js'),
       files: filePaths,
       fix: false,
+      customSyntax: postcssScss,
     });
 
     if (result && result.errored) {
@@ -59,7 +62,7 @@ describe('test/rules-validate.test.js', () => {
         console.log(fileResult.warnings);
       });
 
-      assert.ok(filesResult.length !== 0);
+      assert.ok(filesResult.length === 0);
     }
   });
 
@@ -70,6 +73,7 @@ describe('test/rules-validate.test.js', () => {
       configFile: path.join(__dirname, '../index.js'),
       files: filePaths,
       fix: false,
+      customSyntax: postcssScss,
     });
 
     if (result && result.errored) {
