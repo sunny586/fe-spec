@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   // outDir: '.vitepress/dist',
-  base: process.env.NODE_ENV === 'production' ? 'fe-spec' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/fe-spec/' : '/',
   title: '前端编码规范',
   description: '前端编码规范',
   themeConfig: {
