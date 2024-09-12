@@ -10,7 +10,7 @@ tags:
 # markdownlint-config-encode
 
 :::tip
-印客学院 文档 规范
+sunny586 文档 规范
 :::
 
 支持配套的 [markdownlint 可共享配置](https://www.npmjs.com/package/markdownlint#optionsconfig)。

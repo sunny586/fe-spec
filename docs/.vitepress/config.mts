@@ -31,11 +31,15 @@ export default defineConfig({
       {
         text: 'NPM包',
         items: [
-          { text: 'encode-fe-eslint-config', link: '/npm/eslint' },
-          { text: 'encode-fe-stylelint-config', link: '/npm/stylelint' },
-          { text: 'encode-fe-commitlint-config', link: '/npm/commitlint' },
-          { text: 'encode-fe-markdownlint-config', link: '/npm/markdownlint' },
+          { text: 'sunny586-fe-eslint-config', link: '/npm/eslint' },
+          { text: 'sunny586-fe-stylelint-config', link: '/npm/stylelint' },
+          { text: 'sunny586-fe-commitlint-config', link: '/npm/commitlint' },
+          { text: 'sunny586-fe-markdownlint-config', link: '/npm/markdownlint' },
         ],
+      },
+      {
+        text: '脚手架',
+        items: [{ text: 'sunny586-fe-lint', link: '/cli/sunny586-fe-lint' }],
       },
     ],
     sidebar: [
@@ -84,11 +88,15 @@ export default defineConfig({
       {
         text: 'NPM包',
         items: [
-          { text: 'encode-fe-eslint-config', link: '/npm/eslint' },
-          { text: 'encode-fe-stylelint-config', link: '/npm/stylelint' },
-          { text: 'encode-fe-commitlint-config', link: '/npm/commitlint' },
-          { text: 'encode-fe-markdownlint-config', link: '/npm/markdownlint' },
+          { text: 'sunny586-fe-eslint-config', link: '/npm/eslint' },
+          { text: 'sunny586-fe-stylelint-config', link: '/npm/stylelint' },
+          { text: 'sunny586-fe-commitlint-config', link: '/npm/commitlint' },
+          { text: 'sunny586-fe-markdownlint-config', link: '/npm/markdownlint' },
         ],
+      },
+      {
+        text: '脚手架',
+        items: [{ text: 'sunny586-fe-lint', link: '/cli/sunny586-fe-lint.md' }],
       },
     ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/sunny586/fe-spec' }],

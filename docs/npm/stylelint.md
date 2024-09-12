@@ -10,7 +10,7 @@ tags:
 # stylelint-config-encode
 
 :::tip
-印客学院 CSS 规范
+sunny586 CSS 规范
 :::
 
 支持配套的 [stylelint 可共享配置](https://stylelint.io/user-guide/configure)。
