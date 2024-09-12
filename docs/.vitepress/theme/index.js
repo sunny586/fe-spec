@@ -1,4 +1,4 @@
-// .vitepress/theme/index.js
+// .vitepress/theme/index.js test
 import DefaultTheme from 'vitepress/theme';
 import './custom.css';
 
