@@ -1,0 +1,11 @@
+/* .vitepress/theme/custom.css */
+:root {
+  --vp-c-brand-1: #646cff;
+  --vp-c-brand-2: #747bff;
+  --vp-button-brand-bg: #646cff;
+  --vp-button-brand-border: #646cff;
+}
+
+.logo {
+  border-radius: 50%;
+}
