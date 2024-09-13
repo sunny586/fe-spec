@@ -4,7 +4,7 @@
   "description": "eslint-plugin for fe",
   "author": "zhangyu <313283928@qq.com>",
   "license": "ISC",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "prepublishOnly": "npm run test"
