@@ -22,6 +22,9 @@
     "lint",
     "cli"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/command-exists": "^1.2.0",
     "@types/cross-spawn": "^6.0.2",
