@@ -22,9 +22,6 @@
     "lint",
     "cli"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "devDependencies": {
     "@types/command-exists": "^1.2.0",
     "@types/cross-spawn": "^6.0.2",
@@ -78,11 +75,11 @@
     "prettier": "^2.2.1",
     "strip-ansi": "^6.0.0",
     "stylelint": "^14.3.0",
-    "stylelint-scss": "^4.1.0",
     "sunny586-fe-commitlint-config": "workspace:^",
     "sunny586-fe-eslint-config": "workspace:^",
     "sunny586-fe-markdownlint-config": "workspace:^",
     "sunny586-fe-stylelint-config": "workspace:^",
+    "stylelint-scss": "^4.1.0",
     "terminal-link": "^2.1.1",
     "text-table": "^0.2.0",
     "vue-eslint-parser": "^7.3.0"
