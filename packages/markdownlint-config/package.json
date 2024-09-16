@@ -1,23 +1,23 @@
 {
-  "name": "sunny586-fe-markdownlint-config",
-  "version": "0.1.6",
-  "description": "> TODO: description",
-  "author": "zhangyu <313283928@qq.com>",
-  "homepage": "https://github.com/sunny586/fe-spec#readme",
-  "license": "ISC",
-  "main": "index.json",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sunny586/fe-spec.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sunny586/fe-spec/issues"
-  },
-  "peerDependencies": {
-    "markdownlint": "^0.28.1"
-  }
+	"name": "sunny586-fe-markdownlint-config",
+	"version": "1.0.0",
+	"description": "> TODO: description",
+	"author": "zhangyu <313283928@qq.com>",
+	"homepage": "https://github.com/sunny586/fe-spec#readme",
+	"license": "ISC",
+	"main": "index.json",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sunny586/fe-spec.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sunny586/fe-spec/issues"
+	},
+	"peerDependencies": {
+		"markdownlint": "^0.28.1"
+	}
 }
