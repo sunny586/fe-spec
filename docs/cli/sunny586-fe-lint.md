@@ -4,7 +4,6 @@ categories:
   - 脚手架规范
 tags:
   - 脚手架规范
-
 ---
 
 # sunny586-fe-lint
@@ -15,9 +14,9 @@ tags:
 
 我们引入了多个业界流行的 Linter，并根据规范内容定制了规则包，它们包括：
 
-| 规范                                                              | Lint 工具                                                  | npm 包                                                                                 |
-| ----------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                              | [sunny586-fe-eslint-config](https://www.npmjs.com/package/sunny586-fe-eslint-config)             |
+| 规范                                                              | Lint 工具                                                  | npm 包                                                                                           |
+| ----------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                              | [eslint-config-zack](https://www.npmjs.com/package/eslint-config-zack)                           |
 | CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                         | [sunny586-fe-stylelint-config](https://www.npmjs.com/package/sunny586-fe-stylelint-config)       |
 | Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                 | [sunny586-fe-commitlint-config](https://www.npmjs.com/package/sunny586-fe-commitlint-config)     |
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint) | [sunny586-fe-markdownlint-config](https://www.npmjs.com/package/sunny586-fe-markdownlint-config) |
@@ -46,9 +45,9 @@ npm install sunny586-fe-lint -g
 
 具体会做以下事情：
 
-- 安装各种依赖：包括 `Linter` 依赖，如 [ESLint](https://eslint.org/)、[stylelint](https://stylelint.io/)、[commitlint](https://commitlint.js.org/#/)、[markdownlint](https://github.com/DavidAnson/markdownlint) 等；配置依赖，如 [sunny586-fe-eslint-config](https://www.npmjs.com/package/sunny586-fe-eslint-config)、[sunny586-fe-stylelint-config](https://www.npmjs.com/package/sunny586-fe-stylelint-config)、[sunny586-fe-commitlint-config](https://www.npmjs.com/package/sunny586-fe-commitlint-config)、[sunny586-fe-markdownlint-config](https://www.npmjs.com/package/sunny586-fe-markdownlint-config) 等
+- 安装各种依赖：包括 `Linter` 依赖，如 [ESLint](https://eslint.org/)、[stylelint](https://stylelint.io/)、[commitlint](https://commitlint.js.org/#/)、[markdownlint](https://github.com/DavidAnson/markdownlint) 等；配置依赖，如 [eslint-config-zack](https://www.npmjs.com/package/eslint-config-zack)、[sunny586-fe-stylelint-config](https://www.npmjs.com/package/sunny586-fe-stylelint-config)、[sunny586-fe-commitlint-config](https://www.npmjs.com/package/sunny586-fe-commitlint-config)、[sunny586-fe-markdownlint-config](https://www.npmjs.com/package/sunny586-fe-markdownlint-config) 等
 - 写入各种配置文件，包括：
-  - `.eslintrc.js`、`.eslintignore`：ESLint 配置（继承 `sunny586-fe-eslint-config`）及黑名单文件
+  - `.eslintrc.js`、`.eslintignore`：ESLint 配置（继承 `eslint-config-zack`）及黑名单文件
   - `.stylelintrc.js`、`.stylelintignore`：stylelint 配置（继承 `sunny586-fe-stylelint-config`）及黑名单文件
   - `commitlint.config.js`：commitlint 配置（继承 `sunny586-fe-commitlint-config`）
   - `.markdownlint.json`、`.markdownlintignore`：`markdownlint` 配置及黑名单文件
@@ -118,29 +117,29 @@ npm install sunny586-fe-lint --save
 示例：
 
 ```js
-(await code) -
-  fe -
-  lint.init({
-    eslintType: 'react',
-    enableESLint: true,
-    enableStylelint: true,
-    enableMarkdownlint: true,
-    enablePrettier: true,
-    disableNpmInstall: false,
-  });
+;(await code) -
+	fe -
+	lint.init({
+		eslintType: 'react',
+		enableESLint: true,
+		enableStylelint: true,
+		enableMarkdownlint: true,
+		enablePrettier: true,
+		disableNpmInstall: false
+	})
 ```
 
 config 参数如下：
 
-| 参数               | 类型       | 默认值 | 说明                                                                                                                |
-| ------------------ | ---------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
-| cwd                | string     | -      | 项目绝对路径                                                                                                        |
+| 参数               | 类型       | 默认值 | 说明                                                                                                                  |
+| ------------------ | ---------- | ------ | --------------------------------------------------------------------------------------------------------------------- |
+| cwd                | string     | -      | 项目绝对路径                                                                                                          |
 | eslintType         | ESLintType | -      | 语言和框架类型，如果不配置，等同于 sunny586-fe-lint init，控制台会出现选择器，如果配置，控制台就不会出现选择器        |
-| enableESLint       | boolean    | true   | 是否启用 ESLint，如果不配置默认值为 true，即默认启用 ESLint                                                         |
+| enableESLint       | boolean    | true   | 是否启用 ESLint，如果不配置默认值为 true，即默认启用 ESLint                                                           |
 | enableStylelint    | boolean    | -      | 是否启用 stylelint，如果不配置，等同于 sunny586-fe-lint init，控制台会出现选择器，如果配置，控制台就不会出现选择器    |
 | enableMarkdownlint | boolean    | -      | 是否启用 markdownlint，如果不配置，等同于 sunny586-fe-lint init，控制台会出现选择器，如果配置，控制台就不会出现选择器 |
-| enablePrettier     | boolean    | -      | 是否启用 Prettier                                                                                                   |
-| disableNpmInstall  | boolean    | false  | 是否禁用自动在初始化完成后安装依赖                                                                                  |
+| enablePrettier     | boolean    | -      | 是否启用 Prettier                                                                                                     |
+| disableNpmInstall  | boolean    | false  | 是否禁用自动在初始化完成后安装依赖                                                                                    |
 
 ##### ESLintType
 
@@ -170,11 +169,11 @@ config 参数如下：
 
 ```js
 module.exports = {
-  enableESLint: true,
-  enableStylelint: true,
-  enableMarkdownlint: true,
-  enablePrettier: true,
-};
+	enableESLint: true,
+	enableStylelint: true,
+	enableMarkdownlint: true,
+	enablePrettier: true
+}
 ```
 
 ## 常见问题
@@ -185,13 +184,13 @@ module.exports = {
 
 ```js
 module.exports = {
-  parserOptions: {
-    project: [], // for lint performance
-    createDefaultProgram: false, // for lint performance
-  },
-  rules: {
-    '@typescript-eslint/dot-notation': 0, // for lint performance
-    '@typescript-eslint/restrict-plus-operands': 0, // for lint performance
-  },
-};
+	parserOptions: {
+		project: [], // for lint performance
+		createDefaultProgram: false // for lint performance
+	},
+	rules: {
+		'@typescript-eslint/dot-notation': 0, // for lint performance
+		'@typescript-eslint/restrict-plus-operands': 0 // for lint performance
+	}
+}
 ```

@@ -15,11 +15,11 @@ npm install sunny586-fe-eslint-plugin eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['sunny586-fe-eslint-config'],
-  rules: {
-    'sunny586-fe-eslint-plugin/no-secret-info': 'error',
-  },
-};
+	plugin: ['eslint-config-zack'],
+	rules: {
+		'sunny586-fe-eslint-plugin/no-secret-info': 'error'
+	}
+}
 ```
 
 ### 使用 presets
@@ -27,8 +27,8 @@ module.exports = {
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: 'plugin:sunny586-fe-eslint-plugin/recommended',
-};
+	extends: 'plugin:sunny586-fe-eslint-plugin/recommended'
+}
 ```
 
 ## 支持的规则

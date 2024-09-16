@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "sunny586-fe"
-  text: ""
+  name: 'sunny586-fe'
+  text: ''
   tagline: 前端编码规范工程化
   actions:
     - theme: brand
@@ -20,7 +20,6 @@ features:
     details: 配套完整的测试用例，帮助您提升项目健壮性
 ---
 
-
 ## :star: 设计目的
 
 随着前端技术的发展，前端项目正在变得越来越复杂。`JavaScript` 作为一门弱类型解释性编程语言，其灵活多变的语法极大的提高了前端开发效率，但同时也存在一系列问题。在大型项目开发过程中，代码维护所占的时间比重往往大于新功能的开发。因此编写符合团队编码规范的代码是至关重要的。 一致性的代码规范可以增强团队开发协作效率、提高代码质量、减少遗留系统维护的负担。但是每个人的代码编写喜好不同，代码风格也会迥然不同，若要一个团队内所有的成员都能发挥最大程度的价值，一个具有普适性的标准是必不可少的。
@@ -33,9 +32,9 @@ features:
 
 我们引入了多个业界流行的 `Linter` 作为规约文档的配套工具，并根据规约内容定制了对应的规则包，它们包括：
 
-| 规约                                                              | Lint 工具                                                  | npm 包                                                                                       |
-| ----------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                              | [sunny586-fe-eslint-config](https://www.npmjs.com/package/sunny586-fe-eslint-config)             |
+| 规约                                                              | Lint 工具                                                  | npm 包                                                                                           |
+| ----------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                              | [eslint-config-zack](https://www.npmjs.com/package/eslint-config-zack)                           |
 | CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                         | [sunny586-fe-stylelint-config](https://www.npmjs.com/package/sunny586-fe-stylelint-config)       |
 | Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                 | [sunny586-fe-commitlint-config](https://www.npmjs.com/package/sunny586-fe-commitlint-config)     |
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint) | [sunny586-fe-markdownlint-config](https://www.npmjs.com/package/sunny586-fe-markdownlint-config) |

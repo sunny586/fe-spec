@@ -4,7 +4,6 @@ categories:
   - 工程规范
 tags:
   - 工程规范
-
 ---
 
 # sunny586-fe-eslint-plugin
@@ -22,11 +21,11 @@ npm install sunny586-fe-eslint-plugin eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['sunny586-fe-eslint-config'],
-  rules: {
-    'sunny586-fe-eslint-plugin/no-secret-info': 'error',
-  },
-};
+	plugin: ['eslint-config-zack'],
+	rules: {
+		'sunny586-fe-eslint-plugin/no-secret-info': 'error'
+	}
+}
 ```
 
 ### 使用 presets
@@ -34,8 +33,8 @@ module.exports = {
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: 'plugin:sunny586-fe-eslint-plugin/recommended',
-};
+	extends: 'plugin:sunny586-fe-eslint-plugin/recommended'
+}
 ```
 
 ## 支持的规则
@@ -106,19 +105,19 @@ var jsx = <img src="http://chenghuai.com">;
 **错误**代码示例:
 
 ```js
-var accessKeySecret = 'xxxx';
+var accessKeySecret = 'xxxx'
 
 var client = {
-  accessKeyToken: 'xxxx',
-};
+	accessKeyToken: 'xxxx'
+}
 ```
 
 **正确**代码示例:
 
 ```js
-var accessKeySecret = process.env.ACCESS_KEY_SECRET;
+var accessKeySecret = process.env.ACCESS_KEY_SECRET
 
 var client = {
-  accessKeyToken: process.env.ACCESS_KEY_SECRET,
-};
+	accessKeyToken: process.env.ACCESS_KEY_SECRET
+}
 ```

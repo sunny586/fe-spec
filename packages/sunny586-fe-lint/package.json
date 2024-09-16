@@ -76,7 +76,7 @@
     "strip-ansi": "^6.0.0",
     "stylelint": "^14.3.0",
     "sunny586-fe-commitlint-config": "workspace:^",
-    "sunny586-fe-eslint-config": "workspace:^",
+    "eslint-config-zack": "workspace:^",
     "sunny586-fe-markdownlint-config": "workspace:^",
     "sunny586-fe-stylelint-config": "workspace:^",
     "stylelint-scss": "^4.1.0",
