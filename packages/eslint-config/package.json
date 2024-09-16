@@ -4,7 +4,6 @@
 	"main": "index.js",
 	"description": "JavaScript TypeScript Node 规范",
 	"keywords": [
-		"encode",
 		"javaScript",
 		"typescript",
 		"node",
@@ -15,7 +14,7 @@
 		"test": "mocha ./__tests__/*.test.js --timeout 5000",
 		"print-config": "eslint --print-config ./index.js > ./print-config.json"
 	},
-	"author": "zhangyu <313283928@qq.com>",
+	"author": "chenghuai",
 	"homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
 	"license": "ISC",
 	"repository": {
