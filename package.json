@@ -16,6 +16,7 @@
 		"docs:preview": "vitepress preview docs",
 		"deploy": "bash deploy.sh",
 		"publish": "lerna publish",
+		"unpublish": "lerna uninstall",
 		"lint": "markdownlint README.md",
 		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
 	},
