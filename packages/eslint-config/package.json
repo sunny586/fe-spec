@@ -1,5 +1,5 @@
 {
-	"name": "sunny586-fe-eslint-config",
+	"name": "eslint-config-sunny586",
 	"version": "0.1.10",
 	"main": "index.js",
 	"description": "JavaScript TypeScript Node 规范",
