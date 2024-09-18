@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-zackcode",
-  "version": "0.0.1",
+  "version": "1.0.10",
   "description": "印客学院 CSS规范",
   "main": "index.js",
   "keywords": [
