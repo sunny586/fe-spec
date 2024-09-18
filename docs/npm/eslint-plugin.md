@@ -1,20 +1,20 @@
 ---
-title: eslint-plugin-encode
+title: eslint-plugin-zackcode
 categories:
   - 工程规范
 tags:
   - 工程规范
 author:
   name: 澄怀
-  link: https://github.com/encode-studio-fe/fe-spec
+  link: https://github.com/zackcode-studio-fe/fe-spec
 ---
 
-# eslint-plugin-encode
+# eslint-plugin-zackcode
 
 除了本包，你需要同时安装 [ESlint](https://eslint.org/)
 
 ```shell
-$ npm install eslint-plugin-encode eslint --save-dev
+$ npm install eslint-plugin-zackcode eslint --save-dev
 ```
 
 ## 使用
@@ -24,9 +24,9 @@ $ npm install eslint-plugin-encode eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['eslint-config-encode'],
+  plugin: ['eslint-config-zackcode'],
   rules: {
-    'eslint-plugin-encode/no-secret-info': 'error',
+    'eslint-plugin-zackcode/no-secret-info': 'error',
   },
 };
 ```
@@ -36,7 +36,7 @@ module.exports = {
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: 'plugin:eslint-plugin-encode/recommended',
+  extends: 'plugin:eslint-plugin-zackcode/recommended',
 };
 ```
 

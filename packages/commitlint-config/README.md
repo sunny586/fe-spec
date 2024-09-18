@@ -1,4 +1,4 @@
-# `commitlint-config-encode`
+# `commitlint-config-zackcode`
 
 > 印客学院 Git 规范
 
@@ -9,7 +9,7 @@
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install commitlint-config-encode @commitlint/cli --save-dev
+npm install commitlint-config-zackcode @commitlint/cli --save-dev
 ```
 
 ## 使用

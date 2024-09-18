@@ -33,16 +33,16 @@ export default defineConfig4CustomTheme({
       {
         text: 'NPM包',
         items: [
-          { text: 'eslint-config-encode', link: '/npm/eslint.md' },
-          { text: 'stylelint-config-encode', link: '/npm/stylelint.md' },
-          { text: 'commitlint-config-encode', link: '/npm/commitlint.md' },
-          { text: 'markdownlint-config-encode', link: '/npm/markdownlint.md' },
-          { text: 'eslint-plugin-encode', link: '/npm/eslint-plugin.md' },
+          { text: 'eslint-config-zackcode', link: '/npm/eslint.md' },
+          { text: 'stylelint-config-zackcode', link: '/npm/stylelint.md' },
+          { text: 'commitlint-config-zackcode', link: '/npm/commitlint.md' },
+          { text: 'markdownlint-config-zackcode', link: '/npm/markdownlint.md' },
+          { text: 'eslint-plugin-zackcode', link: '/npm/eslint-plugin.md' },
         ],
       },
       {
         text: '脚手架',
-        items: [{ text: 'encode-fe-lint', link: '/cli/encode-fe-lint.md' }],
+        items: [{ text: 'zackcode-fe-lint', link: '/cli/zackcode-fe-lint.md' }],
       },
     ],
     sidebar: [
@@ -91,32 +91,32 @@ export default defineConfig4CustomTheme({
       {
         title: 'NPM包',
         children: [
-          { title: 'eslint-config-encode', path: '/npm/eslint.md' },
-          { title: 'stylelint-config-encode', path: '/npm/stylelint.md' },
-          { title: 'commitlint-config-encode', path: '/npm/commitlint.md' },
-          { title: 'markdownlint-config-encode', path: '/npm/markdownlint.md' },
-          { title: 'eslint-plugin-encode', path: '/npm/eslint-plugin.md' },
+          { title: 'eslint-config-zackcode', path: '/npm/eslint.md' },
+          { title: 'stylelint-config-zackcode', path: '/npm/stylelint.md' },
+          { title: 'commitlint-config-zackcode', path: '/npm/commitlint.md' },
+          { title: 'markdownlint-config-zackcode', path: '/npm/markdownlint.md' },
+          { title: 'eslint-plugin-zackcode', path: '/npm/eslint-plugin.md' },
         ],
       },
       {
         title: '脚手架',
-        children: [{ title: 'encode-fe-lint', path: '/cli/encode-fe-lint.md' }],
+        children: [{ title: 'zackcode-fe-lint', path: '/cli/zackcode-fe-lint.md' }],
       },
     ],
     logo: '/img/logo.png',
-    repo: 'encode-studio-fe/fe-spec',
+    repo: 'zackcode-studio-fe/fe-spec',
     searchMaxSuggestions: 10,
     docsDir: 'docs',
     footer: {
       createYear: 2023,
       copyrightInfo:
-        'encode studio | <a href="https://github.com/encode-studio-fe/fe-spec" target="_blank">github</a>',
+        'encode studio | <a href="https://github.com/zackcode-studio-fe/fe-spec" target="_blank">github</a>',
     },
 
     extendFrontmatter: {
       author: {
         name: '澄怀',
-        link: 'https://github.com/encode-studio-fe/fe-sepc',
+        link: 'https://github.com/zackcode-studio-fe/fe-sepc',
       },
     },
   },

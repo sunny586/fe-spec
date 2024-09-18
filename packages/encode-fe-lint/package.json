@@ -1,6 +1,6 @@
 {
-  "name": "encode-fe-lint",
-  "version": "1.0.9",
+  "name": "zackcode-fe-lint",
+  "version": "0.0.1",
   "description": "印客教育前端编码规范工程化标准脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -50,12 +50,12 @@
     "chalk": "^4.1.0",
     "command-exists": "^1.2.9",
     "commander": "^6.2.1",
-    "commitlint-config-encode": "^1.0.8",
+    "commitlint-config-zackcode": "workspace:^",
     "cross-spawn": "^7.0.3",
     "ejs": "^3.1.5",
     "eslint": "^8.7.0",
     "eslint-config-egg": "^10.0.0",
-    "eslint-config-encode": "^1.0.8",
+    "eslint-config-zackcode": "workspace:^",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.22.1",
@@ -73,26 +73,26 @@
     "is-docker": "^2.1.1",
     "lodash": "^4.17.20",
     "markdownlint": "^0.25.1",
-    "markdownlint-config-encode": "^1.0.8",
+    "markdownlint-config-zackcode": "workspace:^",
     "markdownlint-rule-helpers": "^0.13.0",
     "ora": "^5.1.0",
     "prettier": "^2.2.1",
     "strip-ansi": "^6.0.0",
     "stylelint": "^14.3.0",
-    "stylelint-config-encode": "^1.0.9",
+    "stylelint-config-zackcode": "workspace:^",
     "stylelint-scss": "^4.1.0",
     "terminal-link": "^2.1.1",
     "text-table": "^0.2.0",
     "vue-eslint-parser": "^7.3.0"
   },
   "author": "chenghuai",
-  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
+  "homepage": "https://github.com/sunny586/fe-spec#readme",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
+    "url": "git+https://github.com/sunny586/fe-spec.git"
   },
   "bugs": {
-    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
+    "url": "https://github.com/sunny586/fe-spec/issues"
   }
 }

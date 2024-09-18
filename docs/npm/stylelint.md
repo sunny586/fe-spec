@@ -1,15 +1,15 @@
 ---
-title: stylelint-config-encode
+title: stylelint-config-zackcode
 categories:
   - 工程规范
 tags:
   - 工程规范
 author:
   name: 澄怀
-  link: https://github.com/encode-studio-fe/fe-spec
+  link: https://github.com/zackcode-studio-fe/fe-spec
 ---
 
-# stylelint-config-encode
+# stylelint-config-zackcode
 
 :::tip
 印客学院 CSS 规范
@@ -22,7 +22,7 @@ author:
 需要先行安装 [stylelint](https://www.npmjs.com/package/stylelint) 和 [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)：
 
 ```bash
-npm install stylelint-config-encode stylelint stylelint-scss --save-dev
+npm install stylelint-config-zackcode stylelint stylelint-scss --save-dev
 ```
 
 ## 使用
@@ -31,6 +31,6 @@ npm install stylelint-config-encode stylelint stylelint-scss --save-dev
 
 ```json
 {
-  "extends": "stylelint-config-encode"
+  "extends": "stylelint-config-zackcode"
 }
 ```

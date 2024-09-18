@@ -1,4 +1,4 @@
-# markdownlint-config-encode
+# markdownlint-config-zackcode
 
 > 印客学院 文档 规范
 
@@ -9,7 +9,7 @@
 需要先行安装 [markdownlint](https://www.npmjs.com/package/markdownlint)：
 
 ```bash
-npm install markdownlint-config-encode markdownlint --save-dev
+npm install markdownlint-config-zackcode markdownlint --save-dev
 ```
 
 ## 使用
@@ -18,6 +18,6 @@ npm install markdownlint-config-encode markdownlint --save-dev
 
 ```json
 {
-  "extends": "markdownlint-config-encode"
+  "extends": "markdownlint-config-zackcode"
 }
 ```
