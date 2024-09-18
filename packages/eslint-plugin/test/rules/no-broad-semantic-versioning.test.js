@@ -8,7 +8,7 @@ ruleTester.run('no-broad-semantic-versioning', rule, {
     {
       filename: 'package.json',
       code: `module.exports = ${JSON.stringify({
-        devDependencies: { 'sunny586-fe-eslint-plugin': '^0.0.5' },
+        devDependencies: { 'eslint-plugin-zackcode': '^0.0.5' },
       })}`,
     },
     {
@@ -21,11 +21,11 @@ ruleTester.run('no-broad-semantic-versioning', rule, {
     {
       filename: 'package.json',
       code: `module.exports = ${JSON.stringify({
-        devDependencies: { 'sunny586-fe-eslint-plugin': '*' },
+        devDependencies: { 'eslint-plugin-zackcode': '*' },
       })}`,
       errors: [
         {
-          message: 'The "sunny586-fe-eslint-plugin" is not recommended to use "*"',
+          message: 'The "eslint-plugin-zackcode" is not recommended to use "*"',
         },
       ],
     },

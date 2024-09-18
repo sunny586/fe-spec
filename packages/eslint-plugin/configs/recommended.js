@@ -1,7 +1,7 @@
 module.exports = {
-  plugins: ['sunny586-fe-eslint-plugin'],
+  plugins: ['eslint-plugin-zackcode'],
   rules: {
-    'sunny586-fe-eslint-plugin/no-http-url': 'warn',
-    'sunny586-fe-eslint-plugin/no-secret-info': 'error',
+    'eslint-plugin-zackcode/no-http-url': 'warn',
+    'eslint-plugin-zackcode/no-secret-info': 'error',
   },
 };

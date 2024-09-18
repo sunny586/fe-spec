@@ -1,13 +1,13 @@
-# sunny586-fe-markdownlint-config
+# markdownlint-config-zackcode
 
 支持配套的 [stylelint 可共享配置](https://stylelint.io/user-guide/configure)。
 
 ## 安装
 
-需要先行安装 [stylelint](https://www.npmjs.com/package/stylelint) 和 [stylelint-SCSS](https://www.npmjs.com/package/stylelint-scss)：
+需要先行安装 [stylelint](https://www.npmjs.com/package/stylelint) 和 [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)：
 
 ```bash
-npm install sunny586-fe-stylelint-config stylelint stylelint-scss --save-dev
+npm install stylelint-config-zackcode stylelint stylelint-scss --save-dev
 ```
 
 ## 使用
@@ -16,6 +16,6 @@ npm install sunny586-fe-stylelint-config stylelint stylelint-scss --save-dev
 
 ```json
 {
-  "extends": "sunny586-fe-stylelint-config"
+  "extends": "stylelint-config-zackcode"
 }
 ```

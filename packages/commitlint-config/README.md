@@ -1,6 +1,6 @@
-# `sunny586-fe-commitlint-config`
+# `commitlint-config-zackcode`
 
-> sunny586 Git 规范
+> 印客学院 Git 规范
 
 支持配套的 [commitlint 配置](https://commitlint.js.org/#/concepts-shareable-config)，用于对 `git commit message` 进行校验。
 
@@ -9,7 +9,7 @@
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install sunny586-fe-commitlint-config @commitlint/cli @commitlint/config-conventional --save-dev
+npm install commitlint-config-zackcode @commitlint/cli --save-dev
 ```
 
 ## 使用
@@ -18,7 +18,7 @@ npm install sunny586-fe-commitlint-config @commitlint/cli @commitlint/config-con
 
 ```javascript
 module.exports = {
- extends: ['sunny586-fe-commitlint-config'],
+  extends: ['encode'],
 };
 ```
 
