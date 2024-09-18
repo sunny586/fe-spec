@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-zackcode",
-  "version": "1.0.10",
+  "version": "1.0.0",
   "main": "index.js",
   "description": "印客学院 Git规范",
   "keywords": [

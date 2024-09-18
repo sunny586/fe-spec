@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zackcode",
-  "version": "1.0.10",
+  "version": "1.0.0",
   "main": "index.js",
   "description": "印客学院 JavaScript TypeScript Node 规范",
   "keywords": [
