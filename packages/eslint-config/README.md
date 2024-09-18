@@ -1,6 +1,6 @@
 # eslint-config-zackcode
 
-> 印客学院 JavaScript TypeScript Node 规范
+> JavaScript TypeScript Node 规范
 
 提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`React`、`Vue`、`Node.js` 等多种项目类型。
 
@@ -24,7 +24,7 @@ npm i -D eslint-config-zackcode @babel/core @babel/eslint-parser eslint-plugin-i
 
 ```json
 {
-  "extends": ["eslint-config-zackcode"]
+	"extends": ["eslint-config-zackcode"]
 }
 ```
 
@@ -51,7 +51,7 @@ npm i -D eslint-config-zackcode @babel/core @babel/eslint-parser eslint-plugin-i
 
 ```json
 {
-  "extends": ["eslint-config-zackcode/react"]
+	"extends": ["eslint-config-zackcode/react"]
 }
 ```
 
@@ -63,7 +63,7 @@ npm i -D eslint-plugin-jsx-a11y
 
 ```json
 {
-  "extends": ["eslint-config-zackcode/react", "eslint-config-zackcode/jsx-a11y"]
+	"extends": ["eslint-config-zackcode/react", "eslint-config-zackcode/jsx-a11y"]
 }
 ```
 
@@ -89,7 +89,7 @@ npm i -D eslint-config-zackcode @babel/core @babel/eslint-parser eslint-plugin-i
 
 ```json
 {
-  "extends": ["eslint-config-zackcode/vue"]
+	"extends": ["eslint-config-zackcode/vue"]
 }
 ```
 
@@ -114,7 +114,7 @@ npm i -D eslint-config-zackcode @babel/core @babel/eslint-parser eslint-plugin-i
 
 ```json
 {
-  "extends": ["eslint-config-zackcode/node"]
+	"extends": ["eslint-config-zackcode/node"]
 }
 ```
 
@@ -139,7 +139,7 @@ npm i -D eslint-config-zackcode @typescript-eslint/parser @typescript-eslint/esl
 
 ```json
 {
-  "extends": ["eslint-config-zackcode/typescript"]
+	"extends": ["eslint-config-zackcode/typescript"]
 }
 ```
 
@@ -147,10 +147,10 @@ npm i -D eslint-config-zackcode @typescript-eslint/parser @typescript-eslint/esl
 
 ```json
 {
-  "extends": "eslint-config-zackcode/typescript",
-  "parserOptions": {
-    "project": "./tsconfig.eslint.json"
-  }
+	"extends": "eslint-config-zackcode/typescript",
+	"parserOptions": {
+		"project": "./tsconfig.eslint.json"
+	}
 }
 ```
 
@@ -178,7 +178,7 @@ npm i -D eslint-config-zackcode @typescript-eslint/parser @typescript-eslint/esl
 
 ```json
 {
-  "extends": ["eslint-config-zackcode/typescript/react"]
+	"extends": ["eslint-config-zackcode/typescript/react"]
 }
 ```
 
@@ -190,7 +190,7 @@ npm i -D  eslint-plugin-jsx-a11y
 
 ```json
 {
-  "extends": ["eslint-config-zackcode/typescript/react", "eslint-config-zackcode/jsx-a11y"]
+	"extends": ["eslint-config-zackcode/typescript/react", "eslint-config-zackcode/jsx-a11y"]
 }
 ```
 
@@ -217,7 +217,7 @@ npm i -D eslint-config-zackcode @typescript-eslint/parser @typescript-eslint/esl
 
 ```json
 {
-  "extends": ["eslint-config-zackcode/typescript/vue"]
+	"extends": ["eslint-config-zackcode/typescript/vue"]
 }
 ```
 
@@ -243,7 +243,7 @@ npm i -D eslint-config-zackcode @typescript-eslint/parser @typescript-eslint/esl
 
 ```json
 {
-  "extends": ["eslint-config-zackcode/typescript/node"]
+	"extends": ["eslint-config-zackcode/typescript/node"]
 }
 ```
 
@@ -263,7 +263,7 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 
 ```json
 {
-  "extends": ["eslint-config-zackcode/typescript/react", "prettier"]
+	"extends": ["eslint-config-zackcode/typescript/react", "prettier"]
 }
 ```
 

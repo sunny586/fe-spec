@@ -1,6 +1,6 @@
 # markdownlint-config-zackcode
 
-> 印客学院 文档 规范
+> 文档 规范
 
 支持配套的 [markdownlint 可共享配置](https://www.npmjs.com/package/markdownlint#optionsconfig)。
 
@@ -18,6 +18,6 @@ npm install markdownlint-config-zackcode markdownlint --save-dev
 
 ```json
 {
-  "extends": "markdownlint-config-zackcode"
+	"extends": "markdownlint-config-zackcode"
 }
 ```

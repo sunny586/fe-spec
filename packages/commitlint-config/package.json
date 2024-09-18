@@ -1,24 +1,23 @@
 {
-  "name": "commitlint-config-zackcode",
-  "version": "1.0.1",
-  "main": "index.js",
-  "description": "印客学院 Git规范",
-  "keywords": [
-    "encode",
-    "commit",
-    "lint"
-  ],
-  "author": "chenghuai",
-  "homepage": "https://github.com/zackcode-studio-fe/fe-spec#readme",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zackcode-studio-fe/fe-spec.git"
-  },
-  "bugs": {
-    "url": "https://github.com/zackcode-studio-fe/fe-spec/issues"
-  },
-  "dependencies": {
-    "conventional-changelog-conventionalcommits": "^4.5.0"
-  }
+	"name": "commitlint-config-zackcode",
+	"version": "1.0.1",
+	"main": "index.js",
+	"description": "Git规范",
+	"keywords": [
+		"commit",
+		"lint"
+	],
+	"author": "chenghuai",
+	"homepage": "https://github.com/sunny586/fe-spec#readme",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sunny586/fe-spec.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sunny586/fe-spec/issues"
+	},
+	"dependencies": {
+		"conventional-changelog-conventionalcommits": "^4.5.0"
+	}
 }
