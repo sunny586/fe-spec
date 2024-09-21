@@ -143,19 +143,40 @@ export default async (options: InitOptions) => {
   if (!pkg.scripts[`${PKG_NAME}-fix`]) {
     pkg.scripts[`${PKG_NAME}-fix`] = `${PKG_NAME} fix`;
   }
+  if (!pkg.scripts[`${PKG_NAME}-commit-file-scan`]) {
+    pkg.scripts[`${PKG_NAME}-commit-file-scan`] = `${PKG_NAME} commit-file-scan`;
+  }
 
   // 配置 commit 卡点
-  log.info(`Step ${++step}. 配置 git commit 卡点`);
-  if (!pkg.husky) pkg.husky = {};
-  if (!pkg.husky.hooks) pkg.husky.hooks = {};
-  pkg.husky.hooks['pre-commit'] = `${PKG_NAME} commit-file-scan`;
-  pkg.husky.hooks['commit-msg'] = `${PKG_NAME} commit-msg-scan`;
-  fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
-  log.success(`Step ${step}. 配置 git commit 卡点成功 :D`);
+  // log.info(`Step ${++step}. 配置 git commit 卡点`);
+  // if (!pkg.husky) pkg.husky = {};
+  // if (!pkg.husky.hooks) pkg.husky.hooks = {};
+  // pkg.husky.hooks['pre-commit'] = `${PKG_NAME} commit-file-scan`;
+  // pkg.husky.hooks['commit-msg'] = `${PKG_NAME} commit-msg-scan`;
+  // fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
+  // log.success(`Step ${step}. 配置 git commit 卡点成功 :D`);
 
   log.info(`Step ${++step}. 写入配置文件`);
   generateTemplate(cwd, config);
   log.success(`Step ${step}. 写入配置文件成功 :D`);
+
+  // 配置husky
+  log.info(`Step ${++step}. 配置husky`);
+  fs.outputFileSync(
+    path.resolve(cwd, '.husky/commit-msg'),
+    `#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx --no -- commitlint --edit ${1}`,
+    'utf8',
+  );
+  fs.outputFileSync(
+    path.resolve(cwd, '.husky/pre-commit'),
+    `#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+pnpm run zackcode-fe-lint-scan`,
+    'utf8',
+  );
 
   // 完成信息
   const logs = [`${PKG_NAME} 初始化完成 :D`].join('\r\n');

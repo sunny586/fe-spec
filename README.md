@@ -4,7 +4,7 @@
 
 ## husky、lint-staged、@commitlint/cli
 
--  安装依赖
+- 安装依赖
 
 ```bash
 npm i husky -D
@@ -19,13 +19,14 @@ npm i @commitlint/cli @commitlint/config-conventional -D
 npx husky install
 
 // 添加 hooks，会在 .husky 目录下生成一个 pre-commit 脚本文件
-npx husky add .husky/pre-commit "npx lint-staged"
+// npx husky add .husky/pre-commit "npx lint-staged"
+npx husky-init
 
 // 添加 commit-msg
 npx husky add .husky/commit-msg 'npx --no -- commitlint --edit ${1}'
 ```
 
-- 生成的文件 pre-commit如果没有生成新建一下
+- 生成的文件 pre-commit 如果没有生成新建一下
 
 ```bash
 #!/usr/bin/env sh
@@ -34,7 +35,7 @@ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit ${1}'
 npx lint-staged
 ```
 
-- 生成的文件 commit-msg如果没有生成新建一下
+- 生成的文件 commit-msg 如果没有生成新建一下
 
 ```bash
 #!/usr/bin/env sh
@@ -43,25 +44,16 @@ npx lint-staged
 npx --no -- commitlint --edit ${1}
 ```
 
-- 在 `package.json` 中配置lint-staged
+- 在 `package.json` 中配置 lint-staged
 
 ```json
 {
-  "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{scss,less,css,html,md}": [
-      "prettier --write"
-    ],
-    "package.json": [
-      "prettier --write"
-    ],
-    "{!(package)*.json,.!(browserslist)*rc}": [
-      "prettier --write--parser json"
-    ]
-  }
+	"lint-staged": {
+		"*.{js,jsx,vue,ts,tsx}": ["eslint --fix", "prettier --write"],
+		"*.{scss,less,css,html,md}": ["prettier --write"],
+		"package.json": ["prettier --write"],
+		"{!(package)*.json,.!(browserslist)*rc}": ["prettier --write--parser json"]
+	}
 }
 ```
 
@@ -69,8 +61,8 @@ npx --no -- commitlint --edit ${1}
 
 ```js
 module.exports = {
-  extends: ['sunny586-fe-commitlint-config'],
-};
+	extends: ['sunny586-fe-commitlint-config']
+}
 ```
 
 - 提交格式
@@ -84,7 +76,7 @@ git commit -m <type>[optional scope]: <description> // 注意冒号后面有空�
 
 ## markdownlint
 
--  安装依赖
+- 安装依赖
 
 ```bash
 npm i -D markdownlint markdownlint-cli
@@ -95,7 +87,7 @@ pnpm run lint
 
 ```json
 {
-  "extends": "sunny586-fe-markdownlint-config"
+	"extends": "sunny586-fe-markdownlint-config"
 }
 ```
 
@@ -116,5 +108,5 @@ pnpm run changelog
 
 ## 参考资料
 
-- [vue项目配置git提交规范husky、lint-staged、@commitlint/cli](https://blog.csdn.net/qq_61402485/article/details/131612959)
-- [Vue3+Ts+Vite项目(第三篇)——配置husky、stylelint、commitlint，配置git提交代码校验](https://blog.csdn.net/qq_44741577/article/details/137959595)
+- [vue 项目配置 git 提交规范 husky、lint-staged、@commitlint/cli](https://blog.csdn.net/qq_61402485/article/details/131612959)
+- [Vue3+Ts+Vite 项目(第三篇)——配置 husky、stylelint、commitlint，配置 git 提交代码校验](https://blog.csdn.net/qq_44741577/article/details/137959595)
